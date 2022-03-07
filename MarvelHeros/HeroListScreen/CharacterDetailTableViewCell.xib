@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterDetailTableViewCell" rowHeight="468" id="Vzm-fa-5IA" customClass="CharacterDetailTableViewCell" customModule="MarvelHeros" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="468"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vzm-fa-5IA" id="Wxn-1g-Mlm">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="468"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNP-at-5dG" customClass="AsyncImageView" customModule="UIComponents">
+                        <rect key="frame" x="20" y="10" width="412" height="412"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SNP-at-5dG" secondAttribute="height" multiplier="1:1" id="Pym-GA-alk"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zii-Pu-JSU">
+                        <rect key="frame" x="20" y="365" width="412" height="57"/>
+                        <color key="backgroundColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxi-up-Qiv">
+                        <rect key="frame" x="30" y="375" width="392" height="37"/>
+                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="31"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zii-Pu-JSU" firstAttribute="leading" secondItem="SNP-at-5dG" secondAttribute="leading" id="60i-s0-JGw"/>
+                    <constraint firstItem="xxi-up-Qiv" firstAttribute="trailing" secondItem="SNP-at-5dG" secondAttribute="trailing" constant="-10" id="70m-q8-QH1"/>
+                    <constraint firstItem="Zii-Pu-JSU" firstAttribute="bottom" secondItem="SNP-at-5dG" secondAttribute="bottom" id="G5j-kc-zM0"/>
+                    <constraint firstItem="Zii-Pu-JSU" firstAttribute="top" secondItem="xxi-up-Qiv" secondAttribute="top" constant="-10" id="Oxx-Jk-B3L"/>
+                    <constraint firstItem="xxi-up-Qiv" firstAttribute="leading" secondItem="SNP-at-5dG" secondAttribute="leading" constant="10" id="PQs-qK-ric"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SNP-at-5dG" secondAttribute="bottom" constant="10" id="Qk2-Xu-kHY"/>
+                    <constraint firstItem="Zii-Pu-JSU" firstAttribute="trailing" secondItem="SNP-at-5dG" secondAttribute="trailing" id="ZPW-Ry-HQz"/>
+                    <constraint firstItem="xxi-up-Qiv" firstAttribute="bottom" secondItem="SNP-at-5dG" secondAttribute="bottom" constant="-10" id="ZTE-7m-65y"/>
+                    <constraint firstItem="SNP-at-5dG" firstAttribute="top" secondItem="Wxn-1g-Mlm" secondAttribute="top" constant="10" id="aHw-YH-drF"/>
+                    <constraint firstItem="SNP-at-5dG" firstAttribute="leading" secondItem="Wxn-1g-Mlm" secondAttribute="leading" constant="20" id="dHa-6P-ldX"/>
+                    <constraint firstAttribute="trailing" secondItem="SNP-at-5dG" secondAttribute="trailing" constant="20" id="twZ-x3-qr8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="xxi-up-Qiv" id="0OM-KD-gQr"/>
+                <outlet property="nameLableBackgroundView" destination="Zii-Pu-JSU" id="qAL-fy-2gK"/>
+                <outlet property="profileImageView" destination="SNP-at-5dG" id="Xmb-zW-cb0"/>
+            </connections>
+            <point key="canvasLocation" x="-282.60869565217394" y="75.669642857142847"/>
+        </tableViewCell>
+    </objects>
+</document>
